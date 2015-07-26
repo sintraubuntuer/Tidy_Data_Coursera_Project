@@ -8,14 +8,14 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 
-###*The Experiment*
+####*The Experiment*
 --------------------------------------
 
 *The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, it was captured the 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments were video-recorded to label the data manually. The obtained dataset was randomly partitioned into two sets, where 70% of the volunteers were selected for generating the training data and 30% the test data. *
 
 *The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.  *
 
-###*For each record it was provided*
+####*For each record it was provided*
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
@@ -76,7 +76,7 @@ run_analysis.R
 
 
 
-###For each record we provide:
+####For each record we provide:
 
 - Its activity label  ( WALKING ,  WALKING_UPSTAIRS ,  WALKING_DOWNSTAIRS ,  SITTING , STANDING ,  LAYING) 
 - An identifier of the subject who carried out the experiment ( integer between 1 and 30 )
@@ -85,7 +85,7 @@ run_analysis.R
 
 
 
-###*License:*
+####*License:*
 
 Use of the original dataset in publications must be acknowledged by referencing the following publication [1] 
 

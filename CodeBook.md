@@ -3,7 +3,7 @@ Code Book
 
 As described in the README.md file the present work is based on a previous work and dataset
 
-####Regarding the original dataset :
+######Regarding the original dataset :
 
 *The variables used in the dataset come from an experiment we already described in the file README.md
 and were obtained in the following way: *
@@ -38,8 +38,8 @@ a list of all the variables  , and their description :
 
 | col| Column Name                      |Description|   variable type   |
 |----|----------------------------------|-----------------------|-------------------------------------|
-|  1 | activity 			| Activity label-String - can assume the 'values'   |   character  |
-|  2 | subjectId  			| subjectID      - An identifier of the subject who carried out the experiment -  Integer   - int between 1 and 30  |   integer  |
+|  1 | activity 			| Activity label - can assume one of the 'values' "WALKING" ,"WALKING_UPSTAIRS" ,  "WALKING_DOWNSTAIRS" ,  "SITTING" , "STANDING" ,  "LAYING"  |   character  |
+|  2 | subjectId  			| An identifier of the subject who carried out the experiment - integer between 1 and 30  |   integer  |
 |  3 | tBodyAccmeanX			| Average body acceleration on the X Axis  |   numeric  |
 |  4 | tBodyAccmeanY  	         	| Average body acceleration on the Y Axis  |   numeric  |
 |  5 | tBodyAccmeanZ			| Average body acceleration on the Z Axis  |   numeric  |

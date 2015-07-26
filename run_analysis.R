@@ -127,7 +127,9 @@ summary_df <- group_by(total_df, activity, subjectId)
 # for each column summarise by calculating the average for each subject and activity
 summary_df <- summarise_each(summary_df , funs(mean), -activityId )
 summary_df <- as.data.frame(summary_df)
+summary_df$activity = factor(summary_df$activity)
 summary_df <- arrange(summary_df, activity, subjectId)
+
 
 ## Write summary_df to a txt file 
 write.table(summary_df, file = "tidy_data_UCI_HAR.txt", sep = " " , row.names=FALSE)

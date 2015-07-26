@@ -35,7 +35,7 @@ a list of all the variables  , and their description :
 
 | col| Column Name                      |Description|   variable type   |
 |----|----------------------------------|-----------------------|-------------------------------------|
-|  1 | activity 			| Activity label - can assume one of the 'values' "WALKING" ,"WALKING_UPSTAIRS" ,  "WALKING_DOWNSTAIRS" ,  "SITTING" , "STANDING" ,  "LAYING"  |   character  |
+|  1 | activity 			| Activity label - factor variable with levels : "WALKING" ,"WALKING_UPSTAIRS" ,  "WALKING_DOWNSTAIRS" ,  "SITTING" , "STANDING" ,  "LAYING"  |   factor  |
 |  2 | subjectId  			| An identifier of the subject who carried out the experiment - integer between 1 and 30  |   integer  |
 |  3 | tBodyAccmeanX			| Average body acceleration on the X Axis  |   numeric  |
 |  4 | tBodyAccmeanY  	         	| Average body acceleration on the Y Axis  |   numeric  |

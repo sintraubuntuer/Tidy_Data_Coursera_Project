@@ -36,8 +36,8 @@ all other variables are numeric() variables on the interval [-1,1]
 
 a list of all the variables  , and their description :
 
-| col| Column Name                      |Description|   variable type
-|----|----------------------------------|-----------------------|
+| col| Column Name                      |Description|   variable type   |
+|----|----------------------------------|-----------------------|-------------------------------------|
 |  1 | activity 			| Activity label-String - can assume the 'values'   |   character  |
 |  2 | subjectId  			| subjectID      - An identifier of the subject who carried out the experiment -  Integer   - int between 1 and 30  |   integer  |
 |  3 | tBodyAccmeanX			| Average body acceleration on the X Axis  |   numeric  |

@@ -21,9 +21,9 @@ As described in the README.md file the present work is based on a previous work 
 Given that a feature list file  was provided with the original dataset including feature labels we chose not to alter the labels except for removing parenthesis "(" and ")" and dashes "-" and substituting "BodyBody" for "Body" 
 
 
-The classes of the columns of our dataframe are :
+The class of the columns of our dataframe are :
 
-activity is a character variable (string) which can assume one of the values 
+activity is a factor variable which can assume one of the 'values'
  " WALKING" ,"WALKING_UPSTAIRS" ,  "WALKING_DOWNSTAIRS" ,  "SITTING" , "STANDING" ,  "LAYING"
 
 subjectId  is an integer between 1 and 30 -   (an identifier of the subject who carried out the experiment)

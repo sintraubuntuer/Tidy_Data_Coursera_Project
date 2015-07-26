@@ -1,7 +1,7 @@
 #README
 ===================
 
-The work presented on this repo is based on a previous experiment and dataset :
+The work presented on this repo is based on a previous experiment and dataset.
 You can find more info about it here :
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones

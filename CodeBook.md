@@ -36,89 +36,89 @@ all other variables are numeric() variables on the interval [-1,1]
 
 a list of all the variables  , and their description :
 
-| col| Column Name                      |Description|
+| col| Column Name                      |Description|   variable type
 |----|----------------------------------|-----------------------|
-|  1 | activity 			| Activity label-String - can assume the 'values'   |
-|  2 | subjectId  			| subjectID      - An identifier of the subject who carried out the experiment -  Integer   - int between 1 and 30  |
-|  3 | tBodyAccmeanX			| Average body acceleration on the X Axis  |
-|  4 | tBodyAccmeanY  	         	| Average body acceleration on the Y Axis  |         
-|  5 | tBodyAccmeanZ			| Average body acceleration on the Z Axis  |
-|  6 | tGravityAccmeanX     		| average gravity acceleration - X Axis    |  
-|  7 | tGravityAccmeanY 		| average gravity acceleration - Y Axis    |
-|  8 | tGravityAccmeanZ  		| average gravity acceleration - Z Axis    |
-|  9 | tBodyAccJerkmeanX		| average time derivative (jerk) of body acceleration  X-axis    |
-| 10 | tBodyAccJerkmeanY		| average time derivative (jerk) of body acceleration  Y-axis    |
-| 11 | tBodyAccJerkmeanZ		| average time derivative (jerk) of body acceleration  Z-axis    |
-| 12 | tBodyGyromeanX			| average body angular velocity on the X-Axis                   |
-| 13 | tBodyGyromeanY			| average body angular velocity on the Y-Axis                   |
-| 14 | tBodyGyromeanZ       		| average body angular velocity on the Z-Axis                   |
-| 15 | tBodyGyroJerkmeanX		| average time derivative (jerk ) of angular velocity  X-axis   |
-| 16 | tBodyGyroJerkmeanY        	| average jerk signal of angular velocity  Y-axis                      |
-| 17 | tBodyGyroJerkmeanZ		| average jerk signal of angular velocity  Z-axis                      |
-| 18 | tBodyAccMagmean     		| average body acceleration Magnitude  ( calculated using the Euclidean norm )        |
-| 19 | tGravityAccMagmean		| average gravity acceleration Magnitude  ( calculated using the Euclidean norm )     |
-| 20 | tBodyAccJerkMagmean       	| average Magnitude of the jerk (time derivative) of body acceleration                |
-| 21 | tBodyGyroMagmean 		| average Magnitude of the angular velocity                                           |
-| 22 | tBodyGyroJerkMagmean		| average Magnitude of the jerk (time derivative) of angular velocity                 | 
-| 23 | fBodyAccmeanX      		| average of the Fast Fourier Transform (FFT) applied to body acceleration on the X-axis  |
-| 24 | fBodyAccmeanY             	| average of the FFT applied to body acceleration on the Y-axis                           |
-| 25 | fBodyAccmeanZ      		| average of the FFT applied to body acceleration on the Z-axis                           |
-| 26 | fBodyAccmeanFreqX         	| weighted average of the frequency components of body acceleration - X-axis  |
-| 27 | fBodyAccmeanFreqY        	| weighted average of the frequency components of body acceleration - Y-axis  |
-| 28 | fBodyAcc_meanFreqZ       	| weighted average of the frequency components of body acceleration - Z-axis  |
-| 29 | fBodyAccJerkmeanX        	| average of the FFT applied to the jerk (time derivative) body acceleration on the X-axis  |
-| 30 | fBodyAccJerkmeanY        	| average of the FFT applied to the jerk signal of body acceleration on the Y-axis  |
-| 31 | fBodyAccJerkmeanZ        	| average of the FFT applied to the jerk signal of body acceleration on the Z-axis  |
-| 32 | fBodyAccJerkmeanFreqX    	| weighted average of the frequency components of the jerk signal of body acceleration X-axis  |
-| 33 | fBodyAccJerkmeanFreqY    	| weighted average of the frequency components of the jerk signal of body acceleration Y-axis  |
-| 34 | fBodyAccJerkmeanFreqZ    	| weighted average of the frequency components of the jerk signal of body acceleration Z-axis   |
-| 35 | fBodyGyromeanX           	| average of the FFT applied to body angular velocity X-axis  |
-| 36 | fBodyGyromeanY           	| average of the FFT applied to body angular velocity Y-axis  |
-| 37 | fBodyGyromeanZ           	| average of the FFT applied to body angular velocity Z-axis  |
-| 38 | fBodyGyromeanFreqX     	        | weighted average of the frequency components of body angular velocity X-axis |
-| 39 | fBodyGyromeanFreqY       	| weighted average of the frequency components of body angular velocity Y-axis |
-| 40 | fBodyGyromeanFreqZ       	| weighted average of the frequency components of body angular velocity Z-axis |
-| 41 | fBodyAccMagmean          	| average of the FFT applied to the Magnitude of body acceleration   |
-| 42 | fBodyAccMagmeanFreq      	| weighted average of the frequency components of the Magnitude of body acceleration       |
-| 43 | fBodyAccJerkMagmean	 	| average of the FFT applied to the Magnitude of the jerk signal of body acceleration      |
-| 44 | fBodyAccJerkMagmeanFreq 	        | weighted average of the frequency components of the Magnitude of body acceleration       |
-| 45 | fBodyGyroMagmean	                | average of the FFT applied to the Magnitude of body angular velocity  |
-| 46 | fBodyGyroMagmeanFreq	        | weighted average of the frequency components of the Magnitude of angular velocity        |
-| 47 | fBodyGyroJerkMagmean	        | average of the FFT applied to the Magnitude of the jerk signal of body angular velocity  |
-| 48 | fBodyGyroJerkMagmeanFreq	        | weighted average of the frequency components of the Magnitude of the jerk signal of body angular velocity  |
-| 49 | tBodyAccstdX                     | standard deviation of body acceleration on the X Axis		|
-| 50 | tBodyAccstdY             	| standard deviation of body acceleration on the Y Axis		|
-| 51 | tBodyAccstdZ                     | standard deviation of body acceleration on the Z Axis		|
-| 52 | tGravityAccstdX                  | standard deviation of gravity acceleration - X Axis		|
-| 53 | tGravityAccstdY                  | standard deviation of gravity acceleration - Y Axis		|
-| 54 | tGravityAccstdZ                  | standard deviation of gravity acceleration - Z Axis		|
-| 55 | tBodyAccJerkstdX                 | standard deviation of time derivative of body acceleration (jerk) X-axis	|
-| 56 | tBodyAccJerkstdY                 | standard deviation of time derivative of body acceleration (jerk) Y-axis	|
-| 57 | tBodyAccJerkstdZ                 | standard deviation of time derivative of body acceleration (jerk) Z-axis	|
-| 58 | tBodyGyrostdX                    | standard deviation of body angular velocity on the X-Axis 			|
-| 59 | tBodyGyrostdY                    | standard deviation of body angular velocity on the Y-Axis			|
-| 60 | tBodyGyrostdZ                    | standard deviation of body angular velocity on the Z-Axis			|
-| 61 | tBodyGyroJerkstdX                | standard deviation of time derivative (jerk ) angular velocity  X-axis	|
-| 62 | tBodyGyroJerkstdY                | standard deviation of average jerk of angular velocity  Y-axis 		|
-| 63 | tBodyGyroJerkstdZ                | standard deviation of average jerk of angular velocity  Z-axis		|
-| 64 | tBodyAccMagstd                   | standard deviation of body acceleration Magnitude ( calculated using the Euclidean norm )      | 
-| 65 | tGravityAccMagstd                | standard deviation of gravity acceleration Magnitude  ( calculated using the Euclidean norm )  | 
-| 66 | tBodyAccJerkMagstd               | standard deviation of Magnitude of the jerk (time derivative) of body acceleration		 |
-| 67 | tBodyGyroMagstd                  | standard deviation of Magnitude of the angular velocity					 |
-| 68 | tBodyGyroJerkMagstd              | standard deviation of Magnitude of the jerk (time derivative) of angular velocity  		 |	
-| 69 | fBodyAccstdX                     | standard deviation of the Fast Fourier Transform (FFT) applied to body acceleration on the X-axis    |
-| 70 | fBodyAccstdY                     | standard deviation of the FFT applied to body acceleration on the Y-axis			       |
-| 71 | fBodyAccstdZ                     | standard deviation of the FFT applied to body acceleration on the Z-axis                             |
-| 72 | fBodyAccJerkstdX                 | standard deviation of the FFT applied to the jerk (time derivative ) of body acceleration X-axis     |
-| 73 | fBodyAccJerkstdY                 | standard deviation of the FFT applied to the jerk of body acceleration Y-axis                        |
-| 74 | fBodyAccJerkstdZ                 | standard deviation of the FFT applied to the jerk of body acceleration Z-axis			       |
-| 75 | fBodyGyrostdX                    | standard deviation of the FFT applied to the body angular velocity on the X-Axis		       |
-| 76 | fBodyGyrostdY                    | standard deviation of the FFT applied to the body angular velocity on the Y-Axis                     |
-| 77 | fBodyGyrostdZ                    | standard deviation of the FFT applied to the body angular velocity on the Z-Axis                     |
-| 78 | fBodyAccMagstd                   | standard deviation of the FFT applied to the Magnitude of body acceleration                          |
-| 79 | fBodyAccJerkMagstd               | standard deviation of the FFT applied to the Magnitude of the jerk of body acceleration              |
-| 80 | fBodyGyroMagstd                  | standard deviation of the FFT applied to the Magnitude of the body angular velocity                  |
-| 81 | fBodyGyroJerkMagstd              | standard deviation of the FFT applied to the Magnitude of the jerk of body angular velocity          |
+|  1 | activity 			| Activity label-String - can assume the 'values'   |   character  |
+|  2 | subjectId  			| subjectID      - An identifier of the subject who carried out the experiment -  Integer   - int between 1 and 30  |   integer  |
+|  3 | tBodyAccmeanX			| Average body acceleration on the X Axis  |   numeric  |
+|  4 | tBodyAccmeanY  	         	| Average body acceleration on the Y Axis  |   numeric  |
+|  5 | tBodyAccmeanZ			| Average body acceleration on the Z Axis  |   numeric  |
+|  6 | tGravityAccmeanX     		| average gravity acceleration - X Axis    |   numeric  |
+|  7 | tGravityAccmeanY 		| average gravity acceleration - Y Axis    |   numeric  |
+|  8 | tGravityAccmeanZ  		| average gravity acceleration - Z Axis    |   numeric  |
+|  9 | tBodyAccJerkmeanX		| average time derivative (jerk) of body acceleration  X-axis    |   numeric  |
+| 10 | tBodyAccJerkmeanY		| average time derivative (jerk) of body acceleration  Y-axis    |   numeric  |
+| 11 | tBodyAccJerkmeanZ		| average time derivative (jerk) of body acceleration  Z-axis    |   numeric  |
+| 12 | tBodyGyromeanX			| average body angular velocity on the X-Axis                    |   numeric  |
+| 13 | tBodyGyromeanY			| average body angular velocity on the Y-Axis                    |   numeric  |
+| 14 | tBodyGyromeanZ       		| average body angular velocity on the Z-Axis                   |   numeric  |
+| 15 | tBodyGyroJerkmeanX		| average time derivative (jerk ) of angular velocity  X-axis   |   numeric  |
+| 16 | tBodyGyroJerkmeanY        	| average jerk signal of angular velocity  Y-axis                      |   numeric  |
+| 17 | tBodyGyroJerkmeanZ		| average jerk signal of angular velocity  Z-axis                      |   numeric  |
+| 18 | tBodyAccMagmean     		| average body acceleration Magnitude  ( calculated using the Euclidean norm )        |   numeric  |
+| 19 | tGravityAccMagmean		| average gravity acceleration Magnitude  ( calculated using the Euclidean norm )     |   numeric  |
+| 20 | tBodyAccJerkMagmean       	| average Magnitude of the jerk (time derivative) of body acceleration                |   numeric  |
+| 21 | tBodyGyroMagmean 		| average Magnitude of the angular velocity                                           |   numeric  |
+| 22 | tBodyGyroJerkMagmean		| average Magnitude of the jerk (time derivative) of angular velocity                 |   numeric  | 
+| 23 | fBodyAccmeanX      		| average of the Fast Fourier Transform (FFT) applied to body acceleration on the X-axis  |   numeric  |
+| 24 | fBodyAccmeanY             	| average of the FFT applied to body acceleration on the Y-axis                           |   numeric  |
+| 25 | fBodyAccmeanZ      		| average of the FFT applied to body acceleration on the Z-axis                           |   numeric  |
+| 26 | fBodyAccmeanFreqX         	| weighted average of the frequency components of body acceleration - X-axis  |   numeric  |
+| 27 | fBodyAccmeanFreqY        	| weighted average of the frequency components of body acceleration - Y-axis  |   numeric  |
+| 28 | fBodyAcc_meanFreqZ       	| weighted average of the frequency components of body acceleration - Z-axis  |   numeric  |
+| 29 | fBodyAccJerkmeanX        	| average of the FFT applied to the jerk (time derivative) body acceleration on the X-axis  |   numeric  |
+| 30 | fBodyAccJerkmeanY        	| average of the FFT applied to the jerk signal of body acceleration on the Y-axis  |   numeric  |
+| 31 | fBodyAccJerkmeanZ        	| average of the FFT applied to the jerk signal of body acceleration on the Z-axis  |   numeric  |
+| 32 | fBodyAccJerkmeanFreqX    	| weighted average of the frequency components of the jerk signal of body acceleration X-axis  |   numeric  |
+| 33 | fBodyAccJerkmeanFreqY    	| weighted average of the frequency components of the jerk signal of body acceleration Y-axis  |   numeric  |
+| 34 | fBodyAccJerkmeanFreqZ    	| weighted average of the frequency components of the jerk signal of body acceleration Z-axis   |   numeric  |
+| 35 | fBodyGyromeanX           	| average of the FFT applied to body angular velocity X-axis  |   numeric  |
+| 36 | fBodyGyromeanY           	| average of the FFT applied to body angular velocity Y-axis  |   numeric  |
+| 37 | fBodyGyromeanZ           	| average of the FFT applied to body angular velocity Z-axis  |   numeric  |
+| 38 | fBodyGyromeanFreqX     	        | weighted average of the frequency components of body angular velocity X-axis |   numeric  |
+| 39 | fBodyGyromeanFreqY       	| weighted average of the frequency components of body angular velocity Y-axis |   numeric  |
+| 40 | fBodyGyromeanFreqZ       	| weighted average of the frequency components of body angular velocity Z-axis |   numeric  |
+| 41 | fBodyAccMagmean          	| average of the FFT applied to the Magnitude of body acceleration   |   numeric  |
+| 42 | fBodyAccMagmeanFreq      	| weighted average of the frequency components of the Magnitude of body acceleration       |   numeric  |
+| 43 | fBodyAccJerkMagmean	 	| average of the FFT applied to the Magnitude of the jerk signal of body acceleration      |   numeric  |
+| 44 | fBodyAccJerkMagmeanFreq 	        | weighted average of the frequency components of the Magnitude of body acceleration       |   numeric  |
+| 45 | fBodyGyroMagmean	                | average of the FFT applied to the Magnitude of body angular velocity  |   numeric  |
+| 46 | fBodyGyroMagmeanFreq	        | weighted average of the frequency components of the Magnitude of angular velocity        |   numeric  |
+| 47 | fBodyGyroJerkMagmean	        | average of the FFT applied to the Magnitude of the jerk signal of body angular velocity  |   numeric  |
+| 48 | fBodyGyroJerkMagmeanFreq	        | weighted average of the frequency components of the Magnitude of the jerk signal of body angular velocity  |   numeric  |
+| 49 | tBodyAccstdX                     | standard deviation of body acceleration on the X Axis		|   numeric  |
+| 50 | tBodyAccstdY             	| standard deviation of body acceleration on the Y Axis		|   numeric  |
+| 51 | tBodyAccstdZ                     | standard deviation of body acceleration on the Z Axis		|   numeric  |
+| 52 | tGravityAccstdX                  | standard deviation of gravity acceleration - X Axis		|   numeric  |
+| 53 | tGravityAccstdY                  | standard deviation of gravity acceleration - Y Axis		|   numeric  |
+| 54 | tGravityAccstdZ                  | standard deviation of gravity acceleration - Z Axis		|   numeric  |
+| 55 | tBodyAccJerkstdX                 | standard deviation of time derivative of body acceleration (jerk) X-axis	|   numeric  |
+| 56 | tBodyAccJerkstdY                 | standard deviation of time derivative of body acceleration (jerk) Y-axis	|   numeric  |
+| 57 | tBodyAccJerkstdZ                 | standard deviation of time derivative of body acceleration (jerk) Z-axis	|   numeric  |
+| 58 | tBodyGyrostdX                    | standard deviation of body angular velocity on the X-Axis 			|   numeric  |
+| 59 | tBodyGyrostdY                    | standard deviation of body angular velocity on the Y-Axis			|   numeric  |
+| 60 | tBodyGyrostdZ                    | standard deviation of body angular velocity on the Z-Axis			|   numeric  |
+| 61 | tBodyGyroJerkstdX                | standard deviation of time derivative (jerk ) angular velocity  X-axis	|   numeric  |
+| 62 | tBodyGyroJerkstdY                | standard deviation of average jerk of angular velocity  Y-axis 		|   numeric  |
+| 63 | tBodyGyroJerkstdZ                | standard deviation of average jerk of angular velocity  Z-axis		|   numeric  |
+| 64 | tBodyAccMagstd                   | standard deviation of body acceleration Magnitude ( calculated using the Euclidean norm )      |   numeric  |
+| 65 | tGravityAccMagstd                | standard deviation of gravity acceleration Magnitude  ( calculated using the Euclidean norm )  |    numeric  |
+| 66 | tBodyAccJerkMagstd               | standard deviation of Magnitude of the jerk (time derivative) of body acceleration		 |   numeric  |
+| 67 | tBodyGyroMagstd                  | standard deviation of Magnitude of the angular velocity					 |   numeric  |
+| 68 | tBodyGyroJerkMagstd              | standard deviation of Magnitude of the jerk (time derivative) of angular velocity  		 |   numeric  |	
+| 69 | fBodyAccstdX                     | standard deviation of the Fast Fourier Transform (FFT) applied to body acceleration on the X-axis    |   numeric  |
+| 70 | fBodyAccstdY                     | standard deviation of the FFT applied to body acceleration on the Y-axis			       |   numeric  |
+| 71 | fBodyAccstdZ                     | standard deviation of the FFT applied to body acceleration on the Z-axis                             |   numeric  |
+| 72 | fBodyAccJerkstdX                 | standard deviation of the FFT applied to the jerk (time derivative ) of body acceleration X-axis     |   numeric  |
+| 73 | fBodyAccJerkstdY                 | standard deviation of the FFT applied to the jerk of body acceleration Y-axis                        |   numeric  |
+| 74 | fBodyAccJerkstdZ                 | standard deviation of the FFT applied to the jerk of body acceleration Z-axis			       |   numeric  |
+| 75 | fBodyGyrostdX                    | standard deviation of the FFT applied to the body angular velocity on the X-Axis		       |   numeric  |
+| 76 | fBodyGyrostdY                    | standard deviation of the FFT applied to the body angular velocity on the Y-Axis                     |   numeric  |
+| 77 | fBodyGyrostdZ                    | standard deviation of the FFT applied to the body angular velocity on the Z-Axis                     |   numeric  |
+| 78 | fBodyAccMagstd                   | standard deviation of the FFT applied to the Magnitude of body acceleration                          |   numeric  |
+| 79 | fBodyAccJerkMagstd               | standard deviation of the FFT applied to the Magnitude of the jerk of body acceleration              |   numeric  |
+| 80 | fBodyGyroMagstd                  | standard deviation of the FFT applied to the Magnitude of the body angular velocity                  |   numeric  |
+| 81 | fBodyGyroJerkMagstd              | standard deviation of the FFT applied to the Magnitude of the jerk of body angular velocity          |   numeric  |
 
 
 

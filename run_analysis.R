@@ -124,7 +124,7 @@ names(total_df) <- new_names      # rename the column names of the data frame wi
 
 summary_df <- group_by(total_df, activity, subjectId)
 
-# for each column summarise by calculating the average for each subject and activity
+# for each column summarise by calculating the average for each activity and subject
 summary_df <- summarise_each(summary_df , funs(mean), -activityId )
 summary_df <- as.data.frame(summary_df)
 summary_df$activity = factor(summary_df$activity)
